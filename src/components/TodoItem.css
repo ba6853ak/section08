@@ -1,0 +1,36 @@
+.TodoItem {
+    /* 플렉스 컨테이너, 안에 있는 자식 요소들을 가로로 나란히 배치 */
+    display: flex;
+
+    /* 플렉스 아이템들의 세로 정렬을 가운데로 맞춤 */
+    /* 각 요소의 높이가 달라고 위로 들쭉날쭉 안하고 수직 중앙 정렬됨 */
+    align-items: center;
+
+    /* flex-direction의 설정 방향을 따라감. */
+    gap: 20px; /* row-gap: 20px, column-gap: 10px */
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+
+}
+
+.TodoItem input {
+    width: 20px;
+}
+
+.TodoItem .content {
+    flex: 1; /* 부모 요소가 display: flex; 여야 함. */
+}
+
+.TodoItem .date {
+    font-size: 14px;
+    color: gray;
+}
+
+.TodoItem button {
+    cursor: pointer;
+    color: gray;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
