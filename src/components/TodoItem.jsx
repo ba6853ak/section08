@@ -5,7 +5,7 @@ const TodoItem = () => {
     <div className="TodoItem">
       <input type="checkBox"></input>
       <div className="content">Todo...</div>
-      <div classNAm="date">Date</div>
+      <div className="date">Date</div>
       <button>삭제</button>
     </div>
   );
